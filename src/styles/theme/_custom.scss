@@ -1,0 +1,81 @@
+body {
+  background: url("../images/bg_light.png") no-repeat center top $global-background;
+}
+
+
+/*Uikit theme restyling*/
+
+.uk-grid {
+  margin-left: -20px;
+
+  > * {
+    padding-left: 20px;
+  }
+}
+
+.uk-width-medium {
+  width: $width-sidebar;
+}
+
+.uk-light {
+  color: #fff;
+}
+
+
+/* Sidebar */
+
+.tm-sidebar {
+  padding: 80px 50px 60px;
+}
+
+.tm-sidebar-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.tm-scale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.tm-scale-header {
+  position: relative;
+  padding-bottom: 90px;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    width: 2px;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+
+/* Main */
+
+.tm-main {
+  padding: 20px 0;
+}
+
+.tm-content-wrapper {
+  position: relative;
+  max-width: 787px;
+  min-height: 100%;
+  background-color: #fff;
+}
+
+.tm-content-decoration {
+  position: absolute;
+  top: 16px;
+  left: 14px;
+
+}

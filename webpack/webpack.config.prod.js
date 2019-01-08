@@ -32,11 +32,11 @@ module.exports = merge(common, {
             },
             {
                 test: /\.(less|css)$/,
-                use: extractor.extract(['css-loader?minimize=true', 'less-loader'])
+                use: extractor.extract(['css-loader?minimize=true', 'resolve-url-loader', 'less-loader'])
             },
             {
                 test: /\.scss$/,
-                use: extractor.extract(['css-loader?minimize=true', 'sass-loader'])
+                use: extractor.extract(['css-loader?minimize=true', 'resolve-url-loader', 'sass-loader'])
             },
         ]
     }
