@@ -70,14 +70,14 @@ h2 {
 }
 
 .uk-button-primary {
-  background-color: $font-color-primary;
+  background-color: $global-background;
   color: $font-color-default;
   border: 1px solid transparent;
-  box-shadow: 0 15px 45px -12px $font-color-primary;
+  box-shadow: 0 15px 45px -12px $global-background;
 }
 
 .uk-button-primary:focus, .uk-button-primary:hover {
-  background-color: darken($font-color-primary, 10%);
+  background-color: darken($global-background, 10%);
   color: $font-color-default;
 }
 
@@ -231,14 +231,10 @@ h2 {
 
 .tm-content-header {
   padding: 30px 0;
-  border-bottom: 2px solid rgba(34,41,76,0.5);
-
-  //color: #22294c;
-  //color: #a0dade;
+  border-bottom: 2px solid #a0dade;
 }
 .tm-content-inner {
   padding: 30px 0;
-  border-top: 2px solid rgba(255,255,255,0.5);
 
   label {
     display: block;
@@ -251,7 +247,10 @@ h2 {
 
 .tm-button-continue {
   margin-bottom: -95px!important;
+}
 
+.tm-button-next {
+  white-space: nowrap;
 }
 
 .tm-answer {
