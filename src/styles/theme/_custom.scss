@@ -1,7 +1,18 @@
 body {
   background: url("../images/bg_light.png") no-repeat center top $global-background;
+  font-family: $font-family-global;
+  font-size: $font-size-global;
+  font-weight: $font-weight-global;
 }
 
+h2 {
+  font-family: $font-family-global;
+  font-size: $font-size-h2;
+}
+
+.tm-text-large {
+  font-size: $font-size-large;
+}
 
 /*Uikit theme restyling*/
 
@@ -13,6 +24,54 @@ body {
   color: #fff;
 }
 
+.uk-logo {
+  font-family: $font-family-global;
+  font-size: $font-size-global;
+  font-weight: $font-weight-global;
+  color: #869eb3;
+}
+
+.uk-text-muted {
+  color: #869eb3;
+}
+
+.uk-button {
+  padding: 0 20px;
+  font-size: $font-size-small;
+  font-weight: $font-weight-global;
+  text-transform: none;
+}
+
+.uk-button-primary {
+  background-color: $font-color-primary;
+  color: #fff;
+  border: 1px solid transparent;
+  box-shadow: 0 15px 45px -12px $font-color-primary;
+}
+
+.uk-button-primary:focus, .uk-button-primary:hover {
+  background-color: $font-color-primary;
+  color: #fff;
+}
+
+.uk-button-primary:disabled {
+  background-color: #dde7eb;
+  color: #c1cdd9;
+  border-color: #c1cdd9;
+  box-shadow: none;
+}
+
+.uk-button-default {
+  background-color: transparent;
+  color: #c1cdd9;
+  border: 1px solid #c1cdd9;
+}
+
+.uk-button-default:focus, .uk-button-default:hover {
+  background-color: transparent;
+  color: #c1cdd9;
+}
+
 
 /* Sidebar */
 
@@ -21,8 +80,9 @@ body {
 }
 
 .tm-sidebar-title {
-  font-size: 18px;
-  font-weight: 700;
+  font-size: $font-size-large;
+  font-weight: $font-weight-thick;
+
 }
 
 .tm-scale {
@@ -33,11 +93,18 @@ body {
   height: 200px;
   border: 3px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
+
+  .fa-play {
+    font-size: 30px;
+  }
 }
 
 .tm-scale-header {
   position: relative;
   padding-bottom: 90px;
+
+  font-size: $font-size-small;
+  opacity: 0.7;
 
   &::before {
     content: '';
@@ -48,6 +115,16 @@ body {
     width: 2px;
     height: 48px;
     background-color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.tm-sidebar-links {
+  font-size: $font-size-tiny;
+  font-weight: 400;
+
+  .tm-sidebar-link-alt {
+    font-weight: $font-weight-global;
+    opacity: 0.7;
   }
 }
 
@@ -108,7 +185,7 @@ body {
 .tm-content {
   position: relative;
   z-index: 1;
-  color: #c1cdd9;
+  color: #22294c; //#c1cdd9;
 }
 
 .tm-content-header {}
@@ -125,5 +202,18 @@ body {
 }
 
 .tm-button-continue {
+  height: 40px;
+  margin-bottom: -130px;
+  border-radius: 500px;
+}
 
+.tm-emphasis-primary {
+  font-size: 46px;
+  color: $font-color-primary;
+  font-weight: 400;
+}
+
+.tm-source-link {
+  font-size: 10px;
+  opacity: 0.5;
 }
