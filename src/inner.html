@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 
     <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/css/uikit.min.css"/>
 
     <!-- UIkit JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit.min.js"></script>
@@ -23,11 +23,12 @@
     <div class="uk-child-width-expand uk-height-viewport uk-flex uk-flex-stretch">
 
         <!--Sidebar-->
-        <div class="tm-sidebar uk-width-medium uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between uk-text-center uk-light" uk-margin>
+        <div class="tm-sidebar uk-width-medium uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between uk-text-center uk-light"
+             uk-margin>
             <div>
-                <div class="tm-sidebar-title">СберСканер</div>
+                <div class="tm-sidebar-title uk-text-large uk-text-bold">СберСканер</div>
 
-                <div class="tm-scale-header uk-margin-medium-top">Заполните шкалу, чтобы получить отчет о финансах</div>
+                <div class="tm-scale-header tm-opacity-70 uk-text-small">Заполните шкалу, чтобы получить отчет о финансах</div>
                 <div class="uk-flex uk-flex-center">
                     <div class="tm-scale">
                         <i class="fa fa-play" aria-hidden="true"></i>
@@ -36,12 +37,12 @@
 
             </div>
 
-            <div class="tm-sidebar-links">
+            <div>
                 <div>
-                    <a href="#">sberscaner.ru</a>
+                    <a href="#" class="tm-font-light tm-font-tiny">sberscaner.ru</a>
                 </div>
                 <div>
-                    <a href="#" class="tm-sidebar-link-alt">Политика конфиденциальности</a>
+                    <a href="#" class="tm-opacity-70 tm-font-tiny">Политика конфиденциальности</a>
                 </div>
             </div>
         </div>
@@ -52,41 +53,47 @@
                 <div class="tm-content-decoration"></div>
 
                 <div class="tm-content">
-                    <div class="uk-container">
-                        <div class="tm-content-header uk-flex uk-flex-middle uk-flex-between">
-                            <a class="uk-logo uk-flex uk-flex-middle uk-margin-top">
+
+                    <div class="tm-content-header">
+                        <div class="uk-container uk-flex uk-flex-middle uk-flex-between">
+                            <a class="uk-logo uk-flex uk-flex-middle">
                                 <img src="images/logo-icon.png" alt="" class="uk-margin-small-right">
                                 <span>Сбережения</span>
                             </a>
 
-                            <button class="tm-button-continue uk-button uk-button-primary" disabled>
+                            <button class="tm-button-continue tm-border-rounded uk-button uk-button-primary">
                                 Продолжить <img src="images/icon-arrow.svg" alt="" class="" uk-svg>
                             </button>
                         </div>
-
-                        <div class="tm-content-inner">
+                    </div>
+                    <div class="tm-content-inner">
+                        <div class="uk-container">
                             <div class="uk-flex uk-flex-between">
-                                <h2 class="uk-margin-large-top">Удается ли вам откладывать часть ваших доходов?</h2>
+                                <h2>Удается ли вам откладывать часть ваших доходов?</h2>
 
-                                <button class="tm-button-continue uk-button uk-button-default">
+                                <button class="tm-button-next tm-border-rounded uk-button uk-button-default">
                                     Назад <img src="images/icon-arrow.svg" alt="" class="" uk-svg>
                                 </button>
                             </div>
 
-                            <div class="tm-answer uk-margin">
+                            <div class="tm-answer">
                                 <div class="uk-margin" uk-margin>
-                                    <label><input class="uk-checkbox" type="checkbox">Да, раз в 3 месяца или чаще</label>
-                                    <label><input class="uk-checkbox" type="checkbox" checked>Редко, раз в полгода-год</label>
-                                    <label><input class="uk-checkbox" type="checkbox">Нет, обычно тратится всё</label>
+                                    <label><input class="uk-checkbox" type="checkbox">Да, раз в 3 месяца или
+                                        чаще</label>
+                                    <label><input class="uk-checkbox" type="checkbox" checked>Редко, раз в
+                                        полгода-год</label>
+                                    <label><input class="uk-checkbox" type="checkbox">Нет, обычно тратится
+                                        всё</label>
                                 </div>
 
-                                <div class="uk-margin-large-top">
-                                    <div class="uk-text-muted uk-margin-bottom">А вы знали, что:</div>
+                                <div class="tm-fact">
+                                    <div class="uk-text-muted">А вы знали, что:</div>
 
                                     <div class="uk-flex-between uk-grid-large" uk-grid>
                                         <div class="uk-width-2-5">
-                                            <div class="tm-emphasis-primary">46%</div>
-                                            <div class="tm-text-large">всех клиентов тратят практически всю свою зарплату.
+                                            <div class="tm-font-light uk-text-lead uk-text-primary">46%</div>
+                                            <div class="tm-text-large">всех клиентов тратят практически всю свою
+                                                зарплату.
                                                 Практически каждый второй.
                                             </div>
                                         </div>
@@ -97,15 +104,12 @@
                                     </div>
                                 </div>
 
-                                <div class="tm-source-link">
+                                <div class="uk-text-meta">
                                     Источник: Премьер
                                 </div>
 
                             </div>
-
                         </div>
-
-
                     </div>
 
 

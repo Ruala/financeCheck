@@ -1,18 +1,17 @@
-body {
+html {
   background: url("../images/bg_light.png") no-repeat center top $global-background;
   font-family: $font-family-global;
   font-size: $font-size-global;
   font-weight: $font-weight-global;
+  color: $font-color-global;
 }
 
 h2 {
   font-family: $font-family-global;
   font-size: $font-size-h2;
+  color: $font-color-global;
 }
 
-.tm-text-large {
-  font-size: $font-size-large;
-}
 
 /*Uikit theme restyling*/
 
@@ -21,21 +20,49 @@ h2 {
 }
 
 .uk-light {
-  color: #fff;
+  color: $font-color-default;
 }
 
 .uk-logo {
   font-family: $font-family-global;
   font-size: $font-size-global;
   font-weight: $font-weight-global;
-  color: #869eb3;
+  color: $font-color-muted;
+}
+
+.uk-text-lead {
+  padding-top: 10px;
+  font-size: 46px;
+  line-height: 1;
+}
+
+.uk-text-meta {
+  font-size: 10px;
+  opacity: 0.5;
+}
+
+.uk-text-small {
+  font-size: $font-size-small;
+}
+
+.uk-text-large {
+  font-size: $font-size-large;
+}
+
+.uk-text-bold {
+  font-weight: $font-weight-thick;
+}
+
+.uk-text-primary {
+  color: $font-color-primary!important;
 }
 
 .uk-text-muted {
-  color: #869eb3;
+  color: $font-color-muted!important;
 }
 
 .uk-button {
+  height: 40px;
   padding: 0 20px;
   font-size: $font-size-small;
   font-weight: $font-weight-global;
@@ -44,14 +71,14 @@ h2 {
 
 .uk-button-primary {
   background-color: $font-color-primary;
-  color: #fff;
+  color: $font-color-default;
   border: 1px solid transparent;
   box-shadow: 0 15px 45px -12px $font-color-primary;
 }
 
 .uk-button-primary:focus, .uk-button-primary:hover {
-  background-color: $font-color-primary;
-  color: #fff;
+  background-color: darken($font-color-primary, 10%);
+  color: $font-color-default;
 }
 
 .uk-button-primary:disabled {
@@ -72,17 +99,45 @@ h2 {
   color: #c1cdd9;
 }
 
+.uk-checkbox, .uk-radio {
+  width: 24px;
+  height: 24px;
+}
+
+.uk-checkbox:checked, .uk-checkbox:indeterminate, .uk-radio:checked, .uk-checkbox:checked:focus, .uk-checkbox:indeterminate:focus, .uk-radio:checked:focus {
+  background-color: $global-background;
+}
+
+.uk-checkbox:focus, .uk-radio:focus {
+  border-color: $global-background;
+}
+
+/* Theme global*/
+
+.tm-opacity-70 {
+  opacity: 0.7;
+}
+
+.tm-font-light {
+  font-weight: $font-weight-thin;
+}
+
+.tm-font-tiny {
+  font-size: $font-size-tiny;
+}
+
+.tm-border-rounded {
+  border-radius: 500px;
+}
 
 /* Sidebar */
 
 .tm-sidebar {
-  padding: 80px 50px 60px;
+  padding: 30px 50px 60px;
 }
 
 .tm-sidebar-title {
-  font-size: $font-size-large;
-  font-weight: $font-weight-thick;
-
+  padding: 50px 0;
 }
 
 .tm-scale {
@@ -103,9 +158,6 @@ h2 {
   position: relative;
   padding-bottom: 90px;
 
-  font-size: $font-size-small;
-  opacity: 0.7;
-
   &::before {
     content: '';
     display: block;
@@ -117,17 +169,6 @@ h2 {
     background-color: rgba(255, 255, 255, 0.7);
   }
 }
-
-.tm-sidebar-links {
-  font-size: $font-size-tiny;
-  font-weight: 400;
-
-  .tm-sidebar-link-alt {
-    font-weight: $font-weight-global;
-    opacity: 0.7;
-  }
-}
-
 
 /* Main */
 
@@ -185,12 +226,19 @@ h2 {
 .tm-content {
   position: relative;
   z-index: 1;
-  color: #22294c; //#c1cdd9;
+  //color: #22294c; //#c1cdd9;
 }
 
-.tm-content-header {}
+.tm-content-header {
+  padding: 30px 0;
+  border-bottom: 2px solid rgba(34,41,76,0.5);
 
+  //color: #22294c;
+  //color: #a0dade;
+}
 .tm-content-inner {
+  padding: 30px 0;
+  border-top: 2px solid rgba(255,255,255,0.5);
 
   label {
     display: block;
@@ -202,18 +250,14 @@ h2 {
 }
 
 .tm-button-continue {
-  height: 40px;
-  margin-bottom: -130px;
-  border-radius: 500px;
+  margin-bottom: -95px!important;
+
 }
 
-.tm-emphasis-primary {
-  font-size: 46px;
-  color: $font-color-primary;
-  font-weight: 400;
+.tm-answer {
+  padding: 20px 0;
 }
 
-.tm-source-link {
-  font-size: 10px;
-  opacity: 0.5;
+.tm-fact {
+  padding: 80px 0 0;
 }
