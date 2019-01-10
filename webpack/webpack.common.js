@@ -35,6 +35,11 @@ module.exports = {
             filename: "inner.html",
             inject: "body",
         }),
+        new HtmlWebpackPlugin({
+            template: Path.resolve(__dirname, '../src/inner-2.html'),
+            filename: "inner-2.html",
+            inject: "body",
+        }),
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery'
