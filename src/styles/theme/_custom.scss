@@ -102,7 +102,12 @@ h2 {
 .uk-checkbox, .uk-radio {
   width: 24px;
   height: 24px;
+  border-radius: 0;
 }
+
+.uk-radio:checked {
+  background-image:url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23fff%22%20points%3D%2212%201%205%207.5%202%205%201%205.5%205%2010%2013%201.5%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+  }
 
 .uk-checkbox:checked, .uk-checkbox:indeterminate, .uk-radio:checked, .uk-checkbox:checked:focus, .uk-checkbox:indeterminate:focus, .uk-radio:checked:focus {
   background-color: $global-background;
@@ -240,7 +245,7 @@ h2 {
     display: block;
   }
 
-  .uk-checkbox {
+  .uk-checkbox, .uk-radio {
     margin-right: 15px;
   }
 }
