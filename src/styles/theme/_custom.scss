@@ -66,6 +66,7 @@ h2 {
   padding: 0 20px;
   font-size: $font-size-small;
   font-weight: $font-weight-global;
+  transition: .2s ease-in-out;
   text-transform: none;
 }
 
@@ -258,13 +259,24 @@ h2 {
   margin-bottom: -95px!important;
 }
 
-.tm-button-radio {
-  width: 100px;
-  height: 50px;
-}
-
 .tm-button-next {
   white-space: nowrap;
+}
+
+.tm-radio-button {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  padding: 0 20px;
+  line-height: 48px;
+  background-color: transparent;
+  border: 1px solid #c1cdd9;
+}
+input.radioId:checked + .tm-radio-button {
+  background-color: $global-background;
+  border-color: transparent;
+  color: $font-color-default;
+  box-shadow: 0 0 5px 1px rgba(25,187,79,0.5);
 }
 
 .tm-answer {
@@ -275,15 +287,3 @@ h2 {
   padding: 80px 0 0;
 }
 
-
-.tm-radio-button {
-  display: inline-block;
-  padding: 0 20px;
-  line-height: 40px;
-  font-size: 20px;
-  text-indent: inherit;
-  background-color: red;
-}
-input.radioId:checked + .tm-radio-button {
-  background-color: blue;
-}

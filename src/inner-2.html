@@ -76,10 +76,14 @@
                                 </div>
 
                                 <div class="tm-answer">
-                                    <div class="uk-margin" uk-margin>
-                                        <div data-uk-button-radio>
-                                            <button class="tm-button-radio uk-button uk-active" aria-checked="true">Да</button>
-                                            <button class="tm-button-radio uk-button" aria-checked="false">Нет</button>
+                                    <div class="uk-margin uk-flex" uk-margin>
+                                        <div class="">
+                                            <input id="radioIdYes" class="radioId" type="radio" name="radio2" hidden>
+                                            <label class="tm-radio-button uk-button" for="radioIdYes">Да</label>
+                                        </div>
+                                        <div class="uk-padding-small uk-padding-remove-vertical">
+                                            <input id="radioIdNo" class="radioId" type="radio" name="radio2" hidden>
+                                            <label class="tm-radio-button uk-button" for="radioIdNo">Нет</label>
                                         </div>
                                     </div>
 
