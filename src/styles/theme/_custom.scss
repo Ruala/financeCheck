@@ -260,3 +260,16 @@ h2 {
 .tm-fact {
   padding: 80px 0 0;
 }
+
+
+.tm-radio-button {
+  display: inline-block;
+  padding: 0 20px;
+  line-height: 40px;
+  font-size: 20px;
+  text-indent: inherit;
+  background-color: red;
+}
+input.radioId:checked + .tm-radio-button {
+  background-color: blue;
+}
