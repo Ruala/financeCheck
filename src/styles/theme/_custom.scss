@@ -301,11 +301,14 @@ input.radioId:checked + .tm-radio-button {
   label {
     padding: 5px 0;
     white-space: nowrap;
+    display: flex;
+
+    input {
+      min-width: 24px;
+    }
 
     span {
-      max-width: 93%;
       white-space: normal;
-      display: inline-block;
       vertical-align: middle;
 
     }
