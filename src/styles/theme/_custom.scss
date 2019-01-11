@@ -279,8 +279,27 @@ input.radioId:checked + .tm-radio-button {
   box-shadow: 0 0 5px 1px rgba(25,187,79,0.5);
 }
 
+.tm-paginator-button {
+  width: 40px;
+  height: 40px;
+  background: rgba(193,205,217,0.5);
+  padding: 0;
+  margin: 0 2px;
+  border-radius: 2px;
+  color: $font-color-muted;
+
+  &.uk-active {
+    color: transparent;
+    background-color: $global-background;
+  }
+}
+
 .tm-answer {
   padding: 20px 0;
+
+  .uk-pagination {
+    margin: 0;
+  }
 }
 
 .tm-fact {
