@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inner</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/css/uikit.min.css"/>
+
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit-icons.min.js"></script>
+</head>
+<body>
+
+<div class="uk-offcanvas-content">
+    <div class="uk-child-width-expand uk-height-viewport uk-flex uk-flex-stretch">
+
+        <!--Sidebar-->
+        <div class="tm-sidebar uk-width-medium uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between uk-text-center uk-light"
+             uk-margin>
+            <div>
+                <div class="tm-sidebar-title uk-text-large uk-text-bold">СберСканер</div>
+
+                <div class="tm-scale-header tm-opacity-70 uk-text-small">Заполните шкалу, чтобы получить отчет о финансах</div>
+                <div class="uk-flex uk-flex-center">
+                    <div class="tm-scale">
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="tm-font-tiny">
+                <div>
+                    <a href="#" class="tm-font-light">sberscaner.ru</a>
+                </div>
+                <div>
+                    <a href="#" class="tm-opacity-70">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Main-->
+        <div class="tm-main">
+            <div class="tm-content-wrapper uk-flex uk-flex-wrap uk-flex-stretch">
+                <div class="tm-content-decoration"></div>
+                <div class="tm-content uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-between">
+                    <div>
+                        <div class="tm-content-header">
+                            <div class="uk-container uk-flex uk-flex-middle uk-flex-between">
+                                <a class="uk-logo uk-flex uk-flex-middle">
+                                    <img src="images/logo-icon.png" alt="" class="uk-margin-small-right">
+                                    <span>Финансовый резерв</span>
+                                </a>
+
+                                <button class="tm-button-continue tm-border-rounded uk-button uk-button-primary" disabled>
+                                    Продолжить <img src="images/icon-arrow.svg" alt="" class="" uk-svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="tm-content-inner">
+                            <div class="uk-container">
+                                <div class="uk-flex uk-flex-between">
+                                    <h2>Сможете ли вы прямо сейчас купить двухнедельную путёвку не беря кредит?</h2>
+
+                                    <button class="tm-button-next tm-border-rounded uk-button uk-button-default">
+                                        Назад <img src="images/icon-arrow.svg" alt="" class="" uk-svg>
+                                    </button>
+                                </div>
+
+                                <div class="tm-answer">
+                                    <div class="uk-margin uk-flex" uk-margin>
+                                        <div class="">
+                                            <input id="radioIdYes" class="radioId" type="radio" name="radio2" hidden>
+                                            <label class="tm-radio-button uk-button" for="radioIdYes">Да</label>
+                                        </div>
+                                        <div class="uk-padding-small uk-padding-remove-vertical">
+                                            <input id="radioIdNo" class="radioId" type="radio" name="radio2" hidden>
+                                            <label class="tm-radio-button uk-button" for="radioIdNo">Нет</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="tm-fact">
+                                        <div class="uk-text-muted">Сколько хранят другие?</div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tm-content-footer">
+                        <div class="uk-container">
+                            <div class="uk-text-meta"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Off-canvas -->
+    <div id="offcanvas-overlay" uk-offcanvas="mode: push; overlay: true">
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <div class="uk-card uk-height-1-1 uk-flex uk-flex-center uk-flex-stretch">
+                <div class="uk-flex uk-flex-wrap uk-flex-wrap-between" uk-margin>
+                    <div uk-margin>
+                        <ul class="uk-nav">
+                            <li><a href="#">Поддержка</a></li>
+                            <li><a href="#">Инструкции</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
