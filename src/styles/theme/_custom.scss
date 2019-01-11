@@ -9,6 +9,7 @@ html {
 h2 {
   font-family: $font-family-global;
   font-size: $font-size-h2;
+  font-weight: $font-weight-global;
   color: $font-color-global;
 }
 
@@ -135,6 +136,8 @@ h2 {
 .tm-border-rounded {
   border-radius: 500px;
 }
+
+
 
 /* Sidebar */
 
@@ -292,6 +295,22 @@ input.radioId:checked + .tm-radio-button {
     color: transparent;
     background-color: $global-background;
   }
+}
+
+.tm-checkbox-list {
+  label {
+    padding: 5px 0;
+    white-space: nowrap;
+
+    span {
+      max-width: 93%;
+      white-space: normal;
+      display: inline-block;
+      vertical-align: middle;
+
+    }
+  }
+
 }
 
 .tm-answer {
