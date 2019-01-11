@@ -55,16 +55,19 @@ module.exports = {
             filename: "inner-5.html",
             inject: "body",
         }),
-
         new HtmlWebpackPlugin({
             template: Path.resolve(__dirname, '../src/inner-6.html'),
             filename: "inner-6.html",
             inject: "body",
         }),
-
         new HtmlWebpackPlugin({
             template: Path.resolve(__dirname, '../src/inner-7.html'),
             filename: "inner-7.html",
+            inject: "body",
+        }),
+        new HtmlWebpackPlugin({
+            template: Path.resolve(__dirname, '../src/summary.html'),
+            filename: "summary.html",
             inject: "body",
         }),
         new webpack.ProvidePlugin({

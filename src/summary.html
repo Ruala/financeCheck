@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inner</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/css/uikit.min.css"/>
+
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit-icons.min.js"></script>
+</head>
+<body>
+
+<div class="uk-offcanvas-content">
+    <div class="uk-child-width-expand uk-height-viewport uk-flex uk-flex-stretch">
+
+        <!--Sidebar-->
+        <div class="tm-sidebar uk-width-medium uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between uk-text-center uk-light"
+             uk-margin>
+            <div>
+                <div class="tm-sidebar-title uk-text-large uk-text-bold">СберСканер</div>
+
+                <div class="tm-scale-header tm-opacity-70 uk-text-small">Заполните шкалу, чтобы получить отчет о
+                    финансах
+                </div>
+                <div class="uk-flex uk-flex-center">
+                    <div class="tm-scale">
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="tm-font-tiny">
+                <div>
+                    <a href="#" class="tm-font-light">sberscaner.ru</a>
+                </div>
+                <div>
+                    <a href="#" class="tm-opacity-70">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Main-->
+        <div class="tm-main">
+            <div class="tm-content-wrapper uk-flex uk-flex-wrap uk-flex-stretch">
+
+                <div class="tm-content">
+                    <div class="uk-container uk-padding">
+
+                        <h1>Результаты финансового сканирования</h1>
+
+                        <div class="tm-diagnostics-card tm-cover-card uk-flex uk-child-width-1-2 uk-padding-small">
+                            <div class="uk-flex uk-flex-wrap uk-flex-wrap-between">
+                                <div>
+                                    <div class="tm-font-tiny">Рекомендация</div>
+                                    <div class="uk-text-large uk-light uk-padding-small uk-padding-remove-horizontal">На первый взгляд у вас всё хорошо</div>
+                                    <div class="uk-text-small">Но для уверенности рекомендуем провести полную диагностику ваших финансов с клиентским менеджером.</div>
+                                </div>
+                                <div>
+                                    <button class="tm-border-rounded uk-button uk-button-default uk-light">Оставить заявку</button>
+                                </div>
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+
+                        <ul uk-accordion="collapsible: false">
+                            <li>
+                                <a class="tm-warning uk-accordion-title" href="#">Бюджет и Расходы</a>
+                                <div class="uk-accordion-content">
+                                    <div class="uk-padding uk-padding-remove-horizontal uk-padding-remove-top">
+                                        <div class="tm-font-light tm-padding-tiny uk-text-large uk-padding-remove-horizontal">Сбережения</div>
+                                        <div class="uk-text-small">Вы сохраните текущий уровень жизни от 3 до 6 месяцев, если потеряете работу.</div>
+                                        <div class="uk-text-bold uk-padding-small uk-padding-remove-horizontal">Неплохо! Но мы верим, что вы можете лучше!</div>
+                                        <div>У Вас оптимальный уровень защиты, если Ваши доходы временно прекратятся. В этом случае у Вас будет время, чтобы восстановить доход без снижения текущего уровня жизни!</div>
+                                        <div class="tm-padding-tiny uk-padding-remove-horizontal">Но возможно уровень Вашего резерва избыточен, и Вы упускаете возможность получить дополнительны доход! Рекомендуем Вам обратиться к Вашему клиентскому менеджеру для формирования инвестиционного портфеля.</div>
+                                    </div>
+                                    <div>
+                                        <div class="tm-font-light tm-padding-tiny uk-text-large uk-padding-remove-horizontal">Обязательные расходы</div>
+                                        <div class="uk-text-small">Вы знаете размер своих обязательных расходов.</div>
+                                        <div class="uk-text-bold uk-padding-small uk-padding-remove-horizontal">Отлично! Вы на правильном пути.</div>
+                                        <div class="uk-padding-small uk-padding-remove-horizontal uk-padding-remove-top">Для более точного анализа расходов предлагаем Вам свериться с расходами, которые отражены в сервисе Бюджет Мобильного приложения Онлайн</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="tm-warning uk-accordion-title" href="#">Финансовый резерв</a>
+                                <div class="uk-accordion-content">
+                                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="tm-good uk-accordion-title" href="#">Финансовая защита</a>
+                                <div class="uk-accordion-content">
+                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="tm-bad uk-accordion-title" href="#">Инвестиции</a>
+                                <div class="uk-accordion-content">
+                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="uk-flex uk-flex-between">
+                            <button class="tm-button-next tm-border-rounded uk-button uk-button-default">
+                                <img src="images/recycle.png" alt="" /> Пройти заново
+                            </button>
+                            <button class="tm-border-rounded uk-button uk-button-primary">
+                                Выслать мне результаты <img src="images/icon-arrow.svg" alt="" class="" uk-svg />
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Off-canvas -->
+    <div id="offcanvas-overlay" uk-offcanvas="mode: push; overlay: true">
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <div class="uk-card uk-height-1-1 uk-flex uk-flex-center uk-flex-stretch">
+                <div class="uk-flex uk-flex-wrap uk-flex-wrap-between" uk-margin>
+                    <div uk-margin>
+                        <ul class="uk-nav">
+                            <li><a href="#">Поддержка</a></li>
+                            <li><a href="#">Инструкции</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

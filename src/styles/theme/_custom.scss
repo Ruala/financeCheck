@@ -6,6 +6,13 @@ html {
   color: $font-color-global;
 }
 
+h1 {
+  font-family: $font-family-global;
+  font-size: $font-size-h1;
+  font-weight: $font-weight-thin;
+  color: $font-color-global;
+}
+
 h2 {
   font-family: $font-family-global;
   font-size: $font-size-h2;
@@ -94,6 +101,11 @@ h2 {
   background-color: transparent;
   color: #c1cdd9;
   border: 1px solid #c1cdd9;
+
+  &.uk-light {
+    color: $font-color-default;
+    border: 1px solid $font-color-default;
+  }
 }
 
 .uk-button-default:focus, .uk-button-default:hover {
@@ -119,6 +131,38 @@ h2 {
   border-color: $global-background;
 }
 
+.uk-accordion {
+  li {
+    border: 1px solid #c1cdd9;
+    padding: 15px;
+    border-radius: 2px;
+  }
+}
+
+.uk-accordion-title {
+  font-size: $font-size-global;
+  color: $font-color-global;
+}
+
+.uk-accordion-title::before, .uk-open>.uk-accordion-title::before {
+  background-image: none;
+}
+
+.tm-good.uk-accordion-title::before {
+  background-image: url("/images/thumb-up.png");
+}
+
+.tm-bad.uk-accordion-title::before {
+  background-image: url("/images/thumb-down.png");
+}
+
+.tm-warning.uk-accordion-title::before {
+  background-image: url("/images/thumb-warn.png");
+}
+
+
+
+
 /* Theme global*/
 
 .tm-opacity-70 {
@@ -137,7 +181,9 @@ h2 {
   border-radius: 500px;
 }
 
-
+.tm-padding-tiny {
+  padding: 7px;
+}
 
 /* Sidebar */
 
@@ -327,3 +373,30 @@ input.radioId:checked + .tm-radio-button {
   padding: 80px 0 0;
 }
 
+//Backs
+
+.tm-cover-card {
+  background-size: cover;
+  min-height: 240px;
+  border-radius: 2px;
+}
+
+.tm-diagnostics-card {
+  background-image: url("/images/diagnostics-card.png");
+}
+
+.tm-budget-card {
+  background-image: url("/images/budget-card.png");
+}
+
+.tm-reserve-card {
+  background-image: url("/images/reserve-card.png");
+}
+
+.tm-insure-card {
+  background-image: url("/images/insure-card.png");
+}
+
+.tm-invest-card {
+  background-image: url("/images/invest-card.png");
+}
