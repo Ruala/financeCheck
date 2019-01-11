@@ -308,9 +308,8 @@ input.radioId:checked + .tm-radio-button {
     }
 
     span {
+      margin-top: -3px;
       white-space: normal;
-      vertical-align: middle;
-
     }
   }
 
