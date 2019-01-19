@@ -24,7 +24,7 @@
 
         <!--Sidebar-->
         <div class="tm-sidebar uk-width-medium uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between uk-text-center uk-light"
-             uk-margin>
+             data-uk-margin>
             <div>
                 <div class="tm-sidebar-title uk-text-large uk-text-bold">СберСканер</div>
 
@@ -74,8 +74,8 @@
                             </div>
                         </div>
 
-                        <ul uk-accordion="collapsible: false">
-                            <li>
+                        <ul data-uk-accordion>
+                            <li class="uk-open">
                                 <a class="tm-warning uk-accordion-title" href="#">Бюджет и Расходы</a>
                                 <div class="uk-accordion-content">
                                     <div class="uk-padding uk-padding-remove-horizontal uk-padding-remove-top">
@@ -113,7 +113,7 @@
                             </li>
                         </ul>
 
-                        <div class="uk-flex uk-flex-between">
+                        <div class="uk-flex uk-flex-between uk-flex-wrap">
                             <button class="tm-button-next tm-border-rounded uk-button uk-button-default">
                                 <img src="images/recycle.png" alt="" /> Пройти заново
                             </button>
@@ -136,8 +136,8 @@
             <button class="uk-offcanvas-close" type="button" uk-close></button>
 
             <div class="uk-card uk-height-1-1 uk-flex uk-flex-center uk-flex-stretch">
-                <div class="uk-flex uk-flex-wrap uk-flex-wrap-between" uk-margin>
-                    <div uk-margin>
+                <div class="uk-flex uk-flex-wrap uk-flex-wrap-between" data-uk-margin>
+                    <div data-uk-margin>
                         <ul class="uk-nav">
                             <li><a href="#">Поддержка</a></li>
                             <li><a href="#">Инструкции</a></li>
